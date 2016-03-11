@@ -1,0 +1,9 @@
+[Unit]
+Description=deis-cleanup
+Requires=docker.service
+
+[Timer]
+OnCalendar=daily
+
+[X-Fleet]
+Global=true
