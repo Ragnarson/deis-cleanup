@@ -1,0 +1,10 @@
+[Unit]
+Description=Clean up Deis docker images
+
+[Service]
+Type=oneshot
+ExecStartPre=-/bin/sh -c 'docker pull twobox/deis-cleanup'
+ExecStart=-/bin/sh -c 'docker run -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker:/var/lib/docker --rm twobox/deis-cleanup'
+
+[X-Fleet]
+Global=true

@@ -1,0 +1,18 @@
+inherit_gem:
+  ragnarson-stylecheck: config/rubocop.yml
+
+Metrics/AbcSize:
+  Severity: warning
+  Max: 40
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/MethodLength:
+  Max: 15
+
+Style/Documentation:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
