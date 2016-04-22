@@ -1,6 +1,6 @@
 FROM ruby:2.3-alpine
 
-ENV DOCKER_VERSION=1.7.1
+ENV DOCKER_VERSION=1.8.3
 
 RUN apk add --update curl bash grep && \
   curl --silent \

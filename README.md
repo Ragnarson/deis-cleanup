@@ -15,6 +15,7 @@ Possible options:
 - `KEEP_LAST_VERSIONS` - the number of releases to keep for each repository (default: `2`).
 - `DRY_RUN` - just print the commands (default: `false`).
 - `EXCLUDE_REGEX` - regex filter for repository name (default: `alpine|deis|blackhole|none|datadog|cleanup|heroku|python`).
+- `CLEANUP_CONTAINERS` - cleanup exited containers (default: `true`)
 
 ### deis-builder
 
