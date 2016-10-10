@@ -72,7 +72,7 @@ Repeat for each Deis node:
 1. Build:
 
   ```
-  $ docker build -t deis-cleanup .
+  $ docker build -t twobox/deis-cleanup .
   ...
   Successfully built 902499c7cfb8
   ```
